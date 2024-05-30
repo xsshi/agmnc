@@ -33,16 +33,16 @@ xticks = 1 : 2 : size(accMe3, 2);
 setAxTick('x', '%.1f', xticks, val3s(xticks));
 set(gca, 'ylim', [0 1.1], 'ytick', 0 : .2 : 1, 'xlim', [.5, size(accMe3, 2) + .5]);
 axis square;
-xlabel('Edge density', 'FontWeight', 'bold');
-ylabel('Accuracy', 'FontWeight', 'bold');
+xlabel('Edge density', 'FontWeight', 'bold', 'FontSize', 16);
+ylabel('Accuracy', 'FontWeight', 'bold', 'FontSize', 16);
 
 shCur(recallMe3, recDev3, 'ax', Ax{2}, 'dev', 'y');
 xticks = 1 : 2 : size(recallMe3, 2);
 setAxTick('x', '%.1f', xticks, val3s(xticks));
 set(gca, 'ylim', [.27 1.05], 'ytick', .2 : .2 : 1, 'xlim', [.5, size(recallMe3, 2) + .5]);
 axis square;
-xlabel('Edge density', 'FontWeight', 'bold');
-ylabel('Recall Rate', 'FontWeight', 'bold');
+xlabel('Edge density', 'FontWeight', 'bold', 'FontSize', 16);
+ylabel('Recall Rate', 'FontWeight', 'bold', 'FontSize', 16);
 
 
 shCur(accMe3, accDev3, 'ax', Ax{3}, 'dev', 'n', 'algs', algs);
